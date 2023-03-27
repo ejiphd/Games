@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="navbar  container-fluid navigation">
+        <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#" id="brand">
+            RPS
+        </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="menu-btn">
+            <span class="fas fa-bars text-white"></span>
+          </button>
+
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"> JS-Games</h5>
+                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="fas fa-close text-white"></span></button>
+            </div>
+
+            <div class="offcanvas-body" >
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white lists" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white lists" aria-current="page" href="#">Tetris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white lists" aria-current="page" href="#">Chess</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white lists" aria-current="page" href="#">Tic Tac Toe</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav><br>
+    <!-- score -->
+    <div class="scoreContainer">
+        <div class="innerScoreContainer">
+           <div class="scoreGrids">
+                <i class="fas fa-user"> Player </i><br>
+                <i class="fas fa-computer comp"> Computer</i>
+           </div>
+           <div class="scoreGrids">
+                <div class="scores" id="playerScore"></div>
+                <div class="scores" id="computerScore"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- choice display -->
+    <div class="choiceDisplay">
+        <div class="innerDisplay">
+            <div class="gridContainer ">
+                <div class="grids" id="result">
+                    
+                </div>
+                <div class="grids" id="player">
+                    
+                </div>
+                <div class="grids">
+                    <h2 class="vs">VS</h2>
+                </div>
+                <div class="grids" id="computer">
+                    
+                </div>
+                <div class="grids" id="reload">
+                    <button type="button" onclick="restart();">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- buttons -->
+    <div class="buttonsContainer">
+        <button class="buttons" id="rock" onclick="rock();">Rock</button>
+        <button class="buttons" id="paper" onclick="paper();">Paper</button>
+        <button class="buttons" id="scissors" onclick="scissors();">Scissors</button>
+    </div><br>
+
+    <!-- footer -->
+    <div class="footer text-center">
+        <p>&#169;Copyright | Dizon Ejiph</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="Assets/main.js"></script>
+</body>
+</html>
